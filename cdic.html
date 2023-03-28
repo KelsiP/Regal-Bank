@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insurance Policies</title>
+    <style>
+        .regal-bank {
+            background-color: maroon;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .regal-bank h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .links a {
+            flex: 1 1 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(185, 104, 104);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+            font-size: 14px;
+            font-family: Helvetica;
+        }
+
+        .links a:hover {
+            background-color: #eecaca;
+            color: rgb(185, 104, 104);
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-right: auto;
+        }
+
+        .dropdown {
+            position: relative;
+            flex: 1 1 0;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            z-index: 1;
+            display: none;
+            flex-direction: column;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: flex;
+        }
+
+        .dropdown-menu a {
+            background-color: rgb(185, 104, 104);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            font-family: Helvetica;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #eecaca;
+            color: rgb(185, 104, 104);
+        }
+
+        .up {
+            margin-top: -5px;
+            width: 150px;
+        }
+
+        .select-ins {
+            font-size: 28px;
+            color: black;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .cdic {
+            font-size: 18px;
+            color: black;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .policies {
+            font-size: 28px;
+            color: rgb(105, 46, 46);
+            margin-bottom: 40px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 50%;
+            margin: auto;
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="radio"] {
+            height: 25px;
+            width: 20px;
+            background-color: lightpink;
+            border-radius: 50%;
+
+        }
+
+        button[type="submit"] {
+            background-color: #dd9797;
+            color: antiquewhite;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #cc0000;
+            color: antiquewhite;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="regal-bank">
+            <h1>Regal Bank</h1>
+        </div>
+        <div class="links">
+            <a href="transactions.html">View Transactions</a>
+            <a href="transfer.html">Transfer Funds</a>
+            <a href="bills.html">Pay Bills</a>
+            <a href="loan.html">Get Loan</a>
+            <a href="cdic.html">Get CDIC</a>
+            <a href="changepin.html">Change Pin</a>
+            <div class="up">
+                <div class="dropdown">
+                    <a href="#">More Options</a>
+                    <div class="dropdown-menu">
+                        <a href="home.html">Home</a>
+                        <a href="viewins.html">Your Insurance</a>
+                        <a href="FAQ.html">FAQ Page</a>
+                        <a href="delete.html">Delete</a>
+                        <a href="logout.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="select-ins">Select an Insurance Policy</div>
+        <div class="box">
+            <form>
+                <div class="cdic">Canadian Deposit Insurance Coorporation</div>
+                <input type="radio" id="option1" name="options" value="option1">
+                <label for="option1">Savings Accounts: This includes regular savings accounts, high-interest savings
+                    accounts, and tax-free savings accounts (TFSAs). Eligible deposits in these accounts are insured up
+                    to $100,000 per depositor per member institution.</label><br><br><br>
+                <input type="radio" id="option2" name="options" value="option2">
+                <label for="option2">Guaranteed Investment Certificates (GICs): GICs are a type of investment product
+                    that offer a fixed rate of return over a set period of time. CDIC insures eligible deposits in GICs
+                    up to $100,000 per depositor per member institution.</label><br><br><br>
+
+                <input type="radio" id="option3" name="options" value="option3">
+                <label for="option3">Chequing: This includes personal chequing accounts and/or business chequing
+                    accounts. Eligible deposits in these accounts are also insured up to $100,000 per depositor per
+                    member institution.</label><br>
+
+                <button type="submit">Submit</button>
+    </body>

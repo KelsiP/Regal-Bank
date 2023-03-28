@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pin Changed</title>
+    <style>
+        .regal-bank {
+            background-color: maroon;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .regal-bank h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .links a {
+            flex: 1 1 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(185, 104, 104);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+            font-size: 14px;
+            font-family: Helvetica;
+        }
+
+        .links a:hover {
+            background-color: #eecaca;
+            color: rgb(185, 104, 104);
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-right: auto;
+        }
+
+        .dropdown {
+            position: relative;
+            flex: 1 1 0;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            z-index: 1;
+            display: none;
+            flex-direction: column;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: flex;
+        }
+
+        .dropdown-menu a {
+            background-color: rgb(185, 104, 104);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            font-family: Helvetica;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #eecaca;
+            color: rgb(185, 104, 104);
+        }
+
+        .up {
+            margin-top: -5px;
+            width: 150px;
+        }
+
+        h1 {
+            font-family: Helvetica;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="regal-bank">
+        <h1>Regal Bank</h1>
+    </div>
+    <div class="links">
+        <a href="transactions.html">View Transactions</a>
+        <a href="transfer.html">Transfer Funds</a>
+        <a href="bills.html">Pay Bills</a>
+        <a href="loan.html">Get Loan</a>
+        <a href="cdic.html">Get CDIC</a>
+        <a href="changepin.html">Change Pin</a>
+        <div class="up">
+            <div class="dropdown">
+                <a href="#">More Options</a>
+                <div class="dropdown-menu">
+                    <a href="home.html">Home</a>
+                    <a href="viewins.html">Your Insurance</a>
+                    <a href="FAQ.html">FAQ Page</a>
+                    <a href="delete.html">Delete</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Pin is Changed</h1>
+</body>
+
+</html>

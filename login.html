@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login - Regal Bank</title>
+    <style>
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f1f1f1;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        border: 1px solid #333333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        background-color: white;
+      }
+      
+      /* Style for the form input fields */
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #333333;
+      }
+      button[type="submit"] {
+        background-color: #ff4d4d;
+        color: antiquewhite;
+        padding: 12px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #cc0000;
+        color:antiquewhite
+      }
+    
+      .welcome {
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      
+      .bank {
+        font-size: 48px;
+        font-weight: bold;
+        color: #ff4d4d;
+        margin-bottom: 40px;
+      }
+      .square {
+        font-family: Helvetica;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="welcome">Welcome back to</div>
+      <div class="bank">Regal Bank</div>
+      <div class="square">
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FAQ Page</title>
+    <style>
+        .regal-bank {
+            background-color: maroon;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .regal-bank h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .links a {
+            flex: 1 1 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(185, 104, 104);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+            font-size: 14px;
+            font-family: Helvetica;
+        }
+
+        .links a:hover {
+            background-color: #eecaca;
+            color: rgb(185, 104, 104);
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-right: auto;
+        }
+
+        .dropdown {
+            position: relative;
+            flex: 1 1 0;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            z-index: 1;
+            display: none;
+            flex-direction: column;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: flex;
+        }
+
+        .dropdown-menu a {
+            background-color: rgb(185, 104, 104);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            font-family: Helvetica;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #eecaca;
+            color: rgb(185, 104, 104);
+        }
+
+        .up {
+            margin-top: -5px;
+            width: 150px;
+        }
+
+        h {
+            font-family: Helvetica;
+        }
+
+        p {
+            font-family: Helvetica;
+        }
+
+        .faq {
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .faq h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .faq h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .faq p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="regal-bank">
+        <h1>Regal Bank</h1>
+    </div>
+    <div class="links">
+        <a href="transactions.html">View Transactions</a>
+        <a href="transfer.html">Transfer Funds</a>
+        <a href="bills.html">Pay Bills</a>
+        <a href="loan.html">Get Loan</a>
+        <a href="cdic.html">Get CDIC</a>
+        <a href="changepin.html">Change Pin</a>
+        <div class="up">
+            <div class="dropdown">
+                <a href="#">More Options</a>
+                <div class="dropdown-menu">
+                    <a href="home.html">Home</a>
+                    <a href="viewins.html">Your Insurance</a>
+                    <a href="FAQ.html">FAQ Page</a>
+                    <a href="delete.html">Delete</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+    </div>
+
+    <div class="question">
+        <h3>What is online banking?</h3>
+        <div class="answer">
+            <p>Online banking is a safe and secure service offered by our bank that allows customers to conduct various
+                banking transactions over the internet, such as checking account balances, transferring funds, paying
+                bills, and applying for loans.</p>
+        </div>
+
+        <div class="question">
+            <h3>What are the requirements for opening a new account?</h3>
+            <div class="answer">
+                <p>To open a new account with Regal Bank, you will need to provide valid government-issued photo
+                    identification (such as a driver's license or passport) and proof of address (such as a recent
+                    utility bill or bank statement).</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>How do I transfer funds between accounts?</h3>
+            <div class="answer">
+                <p>To transfer funds between your Regal Bank accounts, simply log in to your online banking account and
+                    select the "Transfer Funds" option. From there, you can choose the accounts you wish to transfer
+                    funds between and specify the amount.</p>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>What should I do if I suspect fraud on my account?</h3>
+            <div class="answer">
+                <p>If you suspect fraudulent activity on your Regal Bank account, please contact us immediately by phone
+                    at 1-800-123-4567 or by visiting one of our branches. We will work with you to investigate the issue
+                    and take any necessary steps to protect your account. Here are some measures to take to protect your
+                    financial information: Don’t use public Wi-Fi or public computers for online banking. Use a strong
+                    password that can’t be easily guessed for your online banking account. Don’t share your user IDs,
+                    passwords and PINs. Don’t give your personal information to your financial institution by email.
+                    Don’t respond to suspicious messages or click on links within them. </p>
+            </div>
+
+        </div>
+
+        <div class="question">
+            <h3>What is the CDIC?</h3>
+            <div class="answer">
+                <p>The CDIC stands for the Canada Deposit Insurance Corporation. It is a federal Crown corporation in
+                    Canada that was established in 1967. CDIC provides deposit insurance to protect depositors in case
+                    their bank, credit union or other financial institution fails. If the Regal Bank institution fails,
+                    the CDIC will reimburse depositors for their insured deposits, up to a maximum of $100,000 per
+                    insured category (such as savings accounts, chequing account).</p>
+            </div>
+        </div>
+    </div>

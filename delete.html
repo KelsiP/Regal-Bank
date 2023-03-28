@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delete Account</title>
+    <style>
+        .regal-bank {
+            background-color: maroon;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .regal-bank h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .links a {
+            flex: 1 1 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(185, 104, 104);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+            font-size: 14px;
+            font-family: Helvetica;
+        }
+
+        .links a:hover {
+            background-color: #eecaca;
+            color: rgb(185, 104, 104);
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-right: auto;
+        }
+
+        .dropdown {
+            position: relative;
+            flex: 1 1 0;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            z-index: 1;
+            display: none;
+            flex-direction: column;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: flex;
+        }
+
+        .dropdown-menu a {
+            background-color: rgb(185, 104, 104);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            font-family: Helvetica;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #eecaca;
+            color: rgb(185, 104, 104);
+        }
+
+        .up {
+            margin-top: -5px;
+            width: 150px;
+        }
+
+        .space-above {
+            margin-top: 100px;
+        }
+
+        button {
+            background-color: rgb(185, 104, 104);
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            font-size: 30px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #eecaca;
+            color: black;
+            border: 2px solid rgb(185, 104, 104);
+        }
+
+        button:hover {
+            background-color: rgb(185, 104, 104);
+            color: #eecaca;
+        }
+
+        .deleteText {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 28px;
+            color: black;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="regal-bank">
+        <h1>Regal Bank</h1>
+    </div>
+    <div class="links">
+        <a href="transactions.html">View Transactions</a>
+        <a href="transfer.html">Transfer Funds</a>
+        <a href="bills.html">Pay Bills</a>
+        <a href="loan.html">Get Loan</a>
+        <a href="cdic.html">Get CDIC</a>
+        <a href="changepin.html">Change Pin</a>
+        <div class="up">
+            <div class="dropdown">
+                <a href="#">More Options</a>
+                <div class="dropdown-menu">
+                    <a href="home.html">Home</a>
+                    <a href="viewins.html">Your Insurance</a>
+                    <a href="FAQ.html">FAQ Page</a>
+                    <a href="delete.html">Delete</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="deleteText">Delete Your Account</div>
+    <div class="space-above">
+        <button type="submit" required>Delete</button>
+    </div>
+
+</body>
+
+</html>
